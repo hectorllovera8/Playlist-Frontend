@@ -1,0 +1,66 @@
+
+.listadereproduccion {
+  min-height: 220px;
+  max-height: 290px;
+  overflow: auto;
+}
+
+
+
+
+.reproductorKa{
+  min-height: 50vh;
+  overflow: auto;
+
+}
+
+.contenedor{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.cardCanciones:hover{
+  cursor: pointer;
+  background-color: #141618;
+}
+
+.menuHorizontal {
+  display: flex;
+  justify-content: flex-start; /* Alinear a la izquierda */
+  gap: 10px; /* Aumenta el espacio entre los elementos */
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Evita que los elementos se envuelvan en varias líneas */
+  scrollbar-width: thin; /* Para navegadores Firefox */
+  max-width: 95vw;
+  padding: 10px 0; /* Espaciado vertical para mejor apariencia */
+}
+
+.menuHorizontal::-webkit-scrollbar {
+  height: 8px; /* Altura de la barra de desplazamiento */
+}
+
+.menuHorizontal::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del fondo de la pista */
+  border-radius: 10px; /* Esquinas redondeadas para la pista */
+}
+
+.menuHorizontal::-webkit-scrollbar-thumb {
+  background: #888; /* Color del "pulgar" (la parte que se arrastra) */
+  border-radius: 10px; /* Esquinas redondeadas para el pulgar */
+}
+
+.menuHorizontal::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el mouse */
+}
+
+.scrollContainer {
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  overflow-y: hidden; /* Asegura que no haya desplazamiento vertical */
+  max-width: 95vw; /* Limita el ancho del contenedor */
+  padding: 10px 0; /* Espaciado vertical */
+}
+.caratula{
+  width: 200px;
+  height: 150px;
+}
